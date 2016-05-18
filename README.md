@@ -8,7 +8,7 @@ A small GUI for the installation of the PFPSIM Framework.
 
 Due to SystemC's licensing terms, it must be downloaded manually. Download it from this [page](http://accellera.org/downloads/standards/systemc). Follow the link for "SystemC 2.3.1 (Includes TLM) | Core SystemC Language and Examples".
 
-The downloaded *.tar should be placed along side thie files in this repository.
+**Important Note: The downloaded *.tar should be placed along side thie files in this repository.**
 
 ## Installation Configuration:
 
