@@ -28,7 +28,7 @@ For list of complete packages installed see [here]()
 
 ## Installation Options:
 
-The following packages are available: 
+The following packages are available:
 - [PFPSIM Depedencies](https://github.com/pfpsim/PFPSim#dependencies)
 - [SystemC](http://accellera.org/downloads/standards/systemc)
 - [PFPSIM Runtime Library](https://github.com/pfpsim/PFPSim)
@@ -65,7 +65,13 @@ Same instructions as above but scripts need to be modified with a simple find/re
 
 ## OSX/Windows/Others:
 
-You will need to install from source but first all depedencies must be satisfied for each tool (PFPSIM,PFPGEN,PFPDB) Good Luck!
+All dependencies must be satisfied for each tool first.
+- PFPSIM
+- PFPGEN
+- PFPDB
+
+You will need to install everything from source. We try our best not be tied to specific version or compiler tool chain. See repositories of each tool for more information.
+Good Luck!
 
 # Packages Installed:
 ## Depedencies:
