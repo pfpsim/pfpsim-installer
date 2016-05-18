@@ -89,9 +89,9 @@ For P4 see [here](http://p4.org/)
  - python, pip
  - Packages compiled from source:
    - Protobuf V2.6.1
-   - Nanomsg V0.5-beta
-   - Thrift V0.9.2
-   - SystemC
-     - Provided by user
+    - Nanomsg V0.5-beta
+    - Thrift V0.9.2
+    - SystemC
+      - Provided by user
 - P4
  - automake libjudy-dev libgmp-dev libboost-dev libboost-test-dev libboost-program-options-dev libboost-system-dev libboost-filesystem-dev libboost-thread-dev libevent-dev libtool flex bison pkg-config libssl-dev mktemp libffi-dev python-dev python-pip
