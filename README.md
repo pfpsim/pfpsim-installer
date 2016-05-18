@@ -1,4 +1,4 @@
-# PFPSIM Installer
+# PFPSIM Framework Installer
 
 --------------------------------------------------------------------------------
 
@@ -12,9 +12,14 @@ The downloaded *.tar should be placed along side thie files in this repository.
 
 ## Installation Configuration:
 
-# LINUX:
+|Category     |  Toolchain          |
+|:-----------:|---------------------|
+|Compiler     | Clang/LLVM, libstdc++, flexc++, bisonc++ |
+|Build Tools  | CMake, Make |
+|IPC          | Nanomsg V0.5-beta, Protobuf V2.6.1 |
+|SystemC      | Provided by User |
 
-## Debian/Ubuntu:
+For list of complete packages installed see [here]()
 
 ## Installation Options:
 
@@ -27,6 +32,31 @@ The downloaded *.tar should be placed along side thie files in this repository.
 
 ![installer-pfpsim](https://cloud.githubusercontent.com/assets/2020096/15365717/40d4084e-1cef-11e6-91a9-d07b60546237.gif)
 
-## Other:
+#Installing:
 
-Scripts can be modified with a simple find/replace for apt-get
+## LINUX:
+
+### Debian/Ubuntu:
+
+Clone this repository and run the pfpsim-installer script.
+```
+git clone https://github.com/pfpsim/pfpsim-installer.git
+cd pfpsim-installer
+chmod +x *.sh
+./pfpsim-installer.sh
+```
+
+During install if you want to monitor the progress of a component install. Open another terminal window.
+
+```
+cd pfpsim-installer/log
+ls
+tail <component name>.log
+
+```
+### Other:
+Same instructions as above but scripts need to be modified with a simple find/replace for apt-get with the package manager for your distribution
+
+## OSX/Windows/Others:
+
+Won't support.
