@@ -38,9 +38,10 @@ The following packages are available:
 
 ![installer-pfpsim](https://cloud.githubusercontent.com/assets/2020096/15365717/40d4084e-1cef-11e6-91a9-d07b60546237.gif)
 
-#Installing:
+# Installing:
 
-## LINUX:
+
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/204px-Tux.svg.png" width="25px"> </img> Linux: 
 
 ### Debian/Ubuntu:
 
