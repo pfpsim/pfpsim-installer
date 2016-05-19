@@ -65,7 +65,14 @@ tail component_name.log
 ```
 
 ### Other:
-Same instructions as above but scripts need to be modified with a simple find/replace for apt-get with the package manager for your distribution
+Same instructions as above but scripts need to be modified with a simple find/replace for apt-get with the package manager for your distribution.
+For example, for Fedora you could easily use `sed` to replace `apt-get` with `dnf`:
+
+```sh
+find . -name '*.sh' -exec sed -i 's/apt-get/dnf/' \{\} \;
+```
+
+<sup>(note that this is untested) :wink:</sup>
 
 ## OSX/Windows/Others:
 
