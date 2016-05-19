@@ -43,7 +43,7 @@ The following packages are available:
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/204px-Tux.svg.png" width="25px"> </img> Linux: 
 
-### Debian/Ubuntu:
+### <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Debian-OpenLogo.svg" width="25px"> Debian/Ubuntu:
 
 Clone this repository and run the pfpsim-installer script.
 
