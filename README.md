@@ -1,14 +1,14 @@
-# PFPSIM Framework Installer
+# PFPSim Framework Installer
 
 --------------------------------------------------------------------------------
 
-A small GUI for the installation of the PFPSIM Framework.
+A small GUI for the installation of the PFPSim Framework.
 
 ## Before you get started:
 
 Due to SystemC's licensing terms, it must be downloaded manually. Download it from this [page](http://accellera.org/downloads/standards/systemc). Follow the link for "SystemC 2.3.1 (Includes TLM) | Core SystemC Language and Examples".
 
-**Important Note: The downloaded *.tar should be placed along side thie files in this repository.**
+**Important Note: The downloaded *.tar should be placed along side this files in this repository.**
 
 ## Installation Configuration:
 
@@ -29,19 +29,19 @@ For list of complete packages installed see [here](https://github.com/pfpsim/pfp
 ## Installation Options:
 
 The following packages are available:
-- [PFPSIM Depedencies](https://github.com/pfpsim/PFPSim#dependencies)
+- [PFPSim Depedencies](https://github.com/pfpsim/PFPSim#dependencies)
 - [SystemC](http://accellera.org/downloads/standards/systemc)
-- [PFPSIM Runtime Library](https://github.com/pfpsim/PFPSim)
+- [PFPSim Runtime Library](https://github.com/pfpsim/PFPSim)
 - [PFPGEN](https://github.com/pfpsim/pfpgen)
 - [PFPDB](https://github.com/pfpsim/pfpdb)
-- [P4 runtime environment for PFPSIM](https://github.com/pfpsim/p4-behavioral-model#dependencies)
+- [P4 runtime environment for PFPSim](https://github.com/pfpsim/p4-behavioral-model#dependencies)
 
 ![installer-pfpsim](https://cloud.githubusercontent.com/assets/2020096/15365717/40d4084e-1cef-11e6-91a9-d07b60546237.gif)
 
 # Installing:
 
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/204px-Tux.svg.png" width="25px"> </img> Linux: 
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/204px-Tux.svg.png" width="25px"> </img> Linux:
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Debian-OpenLogo.svg" width="25px"> Debian/Ubuntu:
 
@@ -77,7 +77,7 @@ find . -name '*.sh' -exec sed -i 's/apt-get/dnf/' \{\} \;
 ## OSX/Windows/Others:
 
 All dependencies must be satisfied for each tool first.
-- [PFPSIM Runtime Library](https://github.com/pfpsim/PFPSim)
+- [PFPSim Runtime Library](https://github.com/pfpsim/PFPSim)
 - [PFPGEN](https://github.com/pfpsim/pfpgen)
 - [PFPDB](https://github.com/pfpsim/pfpdb)
 
@@ -88,7 +88,7 @@ For P4 see [here](http://p4.org/)
 
 # Packages Installed:
 
-- PFPSIM
+- PFPSim
  - cmake autoconf
  - g++ clang libpcap-dev libtool libc++abi1 libc++abi-dev libc++1 libc++-dev
  - flexc++ bisonc++
