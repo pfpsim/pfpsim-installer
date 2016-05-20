@@ -1,18 +1,18 @@
 # PFPSim Framework Installer
 
---------------------------------------------------------------------------------
-
 A small GUI for the installation of the PFPSim Framework.
+
+![installer-pfpsim](https://cloud.githubusercontent.com/assets/2020096/15365717/40d4084e-1cef-11e6-91a9-d07b60546237.gif)
 
 ## Before you get started:
 
 Due to SystemC's licensing terms, it must be downloaded manually. Download it from this [page](http://accellera.org/downloads/standards/systemc). Follow the link for "SystemC 2.3.1 (Includes TLM) | Core SystemC Language and Examples".
 
-**Important Note: The downloaded *.tar should be placed along side this files in this repository.**
+**Important Note: The downloaded *.tar should be placed along side the files in this repository.**
 
 ## Installation Configuration:
 
-The installer will setup your system with the following configuration. Versions otherwise mentioned of packages installed will be those that the package manager of your distribution installs.
+The installer will set up your system with the following configuration. Versions otherwise mentioned of packages installed will be those that the package manager of your distribution installs.
 
 __NOTE : ALL C++ SOURCES WILL BE BUILT WITH CLANG/LLVM BY THIS INSTALLER__
 
@@ -32,11 +32,9 @@ The following packages are available:
 - [PFPSim Depedencies](https://github.com/pfpsim/PFPSim#dependencies)
 - [SystemC](http://accellera.org/downloads/standards/systemc)
 - [PFPSim Runtime Library](https://github.com/pfpsim/PFPSim)
-- [PFPGEN](https://github.com/pfpsim/pfpgen)
-- [PFPDB](https://github.com/pfpsim/pfpdb)
+- [`pfpgen`](https://github.com/pfpsim/pfpgen)
+- [`pfpdb`](https://github.com/pfpsim/pfpdb)
 - [P4 runtime environment for PFPSim](https://github.com/pfpsim/p4-behavioral-model#dependencies)
-
-![installer-pfpsim](https://cloud.githubusercontent.com/assets/2020096/15365717/40d4084e-1cef-11e6-91a9-d07b60546237.gif)
 
 # Installing:
 
@@ -78,13 +76,12 @@ find . -name '*.sh' -exec sed -i 's/apt-get/dnf/' \{\} \;
 
 All dependencies must be satisfied for each tool first.
 - [PFPSim Runtime Library](https://github.com/pfpsim/PFPSim)
-- [PFPGEN](https://github.com/pfpsim/pfpgen)
-- [PFPDB](https://github.com/pfpsim/pfpdb)
+- [`pfpgen`](https://github.com/pfpsim/pfpgen)
+- [`pfpdb`](https://github.com/pfpsim/pfpdb)
 
 You will need to install everything from source. We try our best not be tied to specific version or compiler tool chain. See repositories of each tool for more information.
 Good Luck!
 
-For P4 see [here](http://p4.org/)
 
 # Packages Installed:
 
