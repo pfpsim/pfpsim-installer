@@ -32,7 +32,10 @@
 
 echo "Installing pfpdb..."
 
+sudo apt-get install -y python
 sudo apt-get install -y python-setuptools
+
+sudo ./get-PFPDB.py "v1.0.0" --latest
 
 sudo pip install pfpdb*.whl
 

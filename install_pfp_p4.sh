@@ -32,6 +32,15 @@
 
 echo "Installing pfp-p4..."
 
-sudo dpkg -i PFP-P4*.deb
+./get-PFPSim.py "v1.0.0" "clang++" --latest --source
+tar -xvzf pfpsim*.tar.gz
+cd pfpsim-PFPSim-*
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=DEBUG -DPFPSIM=NO ../
+make
+make install
+cd ../../
+rm -rf pfpsim-PFPSim-*
 
 echo "Done installing pfp-p4."
