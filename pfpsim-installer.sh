@@ -32,6 +32,13 @@
 
 # Author: Lemniscate Snickets
 #set -o xtrace
+
+if [ ! "$(whoami)" == "root" ]
+then
+  echo "You must run this installer as root!"
+  exit 1
+fi
+
 THE_CHOSEN=$(whiptail --title "PFPSIM Framework Installer" --checklist      \
     "Choose components to install" 15 60 10                                 \
     "Dependencies" "Compiler,systemlibs etc" ON                              \
