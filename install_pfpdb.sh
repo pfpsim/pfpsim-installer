@@ -37,6 +37,10 @@ sudo apt-get install -y python-setuptools
 
 sudo ./get-PFPDB.py "v1.0.0" --latest
 
-sudo pip install pfpdb*.whl
+./get-PFPDB.py "v1.0.0" --source --latest
+tar -xzf pfpdbsource.tar.gz 
+cd pfpsim-pfpdb-*
+sudo python setup.py install
+cd ../
 
 echo "Done installing pfpdb."
