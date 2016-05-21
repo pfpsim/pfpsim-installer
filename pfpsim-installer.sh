@@ -77,6 +77,7 @@ if [ $exitstatus = 0 ]; then
     progress=0
     counter=0
     {
+    mkdir -p log
     while [ $progress -ne $NumSelectedOptions ]
     do
     # Iterate over each option. Removes quotations.
