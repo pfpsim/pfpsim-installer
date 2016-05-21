@@ -93,7 +93,7 @@ else:
 
 if not (download_url == "INVALID"):
     print download_url
-    r = Request(download_url,None)
+    r = Request(download_url,None,{"Accept":"application/octet-stream"})
     deb_resp = urlopen(r).read()
     print("Successfully downloaded")
     with open(package_name, 'wb') as debfile:
