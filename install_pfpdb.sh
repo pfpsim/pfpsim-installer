@@ -34,8 +34,11 @@ echo "Installing pfpdb..."
 
 sudo apt-get install -y python
 sudo apt-get install -y python-setuptools
+sudo apt-get install -y python-dev libssl-dev libffi-dev
+#sudo pip install cffi --upgrade # required for debian 8.3x
+sudo pip install tabluate protobuf nnpy
 
-sudo ./get-PFPDB.py "v1.0.0" --latest
+#sudo ./get-PFPDB.py "v1.0.0" --latest
 
 ./get-PFPDB.py "v1.0.0" --source --latest
 tar -xzf pfpdbsource.tar.gz 
