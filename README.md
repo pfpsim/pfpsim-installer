@@ -82,7 +82,10 @@ All dependencies must be satisfied for each tool first.
 You will need to install everything from source. We try our best not be tied to specific version or compiler tool chain. See repositories of each tool for more information.
 Good Luck!
 
+# Explore Examples
 
+- [Simple NPU](https://github.com/pfpsim/simple-npu)  - An example model of a generic Network Processing Unit.
+- [Simple RMT](https://github.com/pfpsim/simple-rmt)  - An example model of a Reconfigurable Match-Tables architecture.
 # Packages Installed:
 
 - PFPSim
