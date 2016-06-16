@@ -45,8 +45,8 @@ THE_CHOSEN=$(whiptail --title "PFPSIM Framework Installer" --checklist      \
 declare -A install_scripts
 
 # Fill associative array. Key: Option, Value: Script to run
-install_scripts=( ["Dependencies"]="install_pfpsim_deps.sh --clang" \
-    ["SystemC"]="install_systemc.sh --tar systemc-2.3.1.tgz --compiler clang" \
+install_scripts=( ["Dependencies"]="install_pfpsim_deps_autofind_compiler.sh" \
+    ["SystemC"]="install_systemc_autofind_compiler.sh" \
     ["P4Lib"]="install_pfp_p4.sh" \
     ["LibPFPSIM"]="install_pfpsim.sh" \
     ["PFPGEN"]="install_pfpgen.sh" \
