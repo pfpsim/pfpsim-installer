@@ -89,12 +89,21 @@ if not args.source:
             package_name = asset['name']
 else:
     download_url = resp['tarball_url']
-    package_name = "pfpgensource.tar.gz"
+    package_name = "pfpdbsource.tar.gz"
 
 if not (download_url == "INVALID"):
-    print download_url
-    r = Request(download_url,None)
-    deb_resp = urlopen(r).read()
-    print("Successfully downloaded")
-    with open(package_name, 'wb') as debfile:
-        debfile.write(deb_resp)
+	if not args.source:		
+		print download_url
+		r = Request(download_url,None,{"Accept":"application/octet-stream"})
+		deb_resp = urlopen(r).read()
+		print("Successfully downloaded")
+		with open(package_name, 'wb') as debfile:
+			debfile.write(deb_resp)
+	else: 
+		print download_url
+		r = Request(download_url,None)
+		deb_resp = urlopen(r).read()
+		print("Successfully downloaded")
+		print package_name
+		with open(package_name, 'wb') as debfile:
+			debfile.write(deb_resp)

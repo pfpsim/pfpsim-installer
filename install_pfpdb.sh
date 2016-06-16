@@ -34,9 +34,20 @@ echo "Installing pfpdb..."
 
 sudo apt-get install -y python
 sudo apt-get install -y python-setuptools
+sudo apt-get install -y python-dev libssl-dev libffi-dev python-pip
+sudo pip install protobuf
+sudo pip install cffi --upgrade # required for debian 8.3x for nnpy bindings to compile
+sudo pip install nnpy
+sudo pip install tabulate
 
-sudo ./get-PFPDB.py "v1.0.0" --latest
 
-sudo pip install pfpdb*.whl
+
+#sudo ./get-PFPDB.py "v1.0.0" --latest
+
+./get-PFPDB.py "v1.0.0" --source --latest
+tar -xzf pfpdbsource.tar.gz 
+cd pfpsim-pfpdb-*
+sudo python setup.py install
+cd ../
 
 echo "Done installing pfpdb."

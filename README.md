@@ -38,28 +38,28 @@ The following packages are available:
 
 # Installing:
 
-
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/204px-Tux.svg.png" width="25px"> </img> Linux:
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Debian-OpenLogo.svg" width="25px"> Debian/Ubuntu:
 
 Clone this repository and run the pfpsim-installer script.
 
+**Note**: don't forget to [manually download the SystemC source](#before-you-get-started)
+
 ```
 git clone https://github.com/pfpsim/pfpsim-installer.git
 cd pfpsim-installer
-chmod +x *.sh
 sudo ./pfpsim-installer.sh
 ```
 
-*Administrator privileges will probably be required since components are installed in default locations.*
+*Administrator privileges are required since components are installed globally*
 
 During install if you want to monitor the progress of a component install. Open another terminal window.
 
 ```
 cd pfpsim-installer/log
 ls
-tail component_name.log
+tail <component_name>.log
 ```
 
 ### Other:
@@ -82,6 +82,10 @@ All dependencies must be satisfied for each tool first.
 You will need to install everything from source. We try our best not be tied to specific version or compiler tool chain. See repositories of each tool for more information.
 Good Luck!
 
+# Explore Examples
+
+- [Simple NPU](https://github.com/pfpsim/simple-npu)  - An example model of a generic Network Processing Unit.
+- [Simple RMT](https://github.com/pfpsim/simple-rmt)  - An example model of a Reconfigurable Match-Tables architecture.
 
 # Packages Installed:
 
