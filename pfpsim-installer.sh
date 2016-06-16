@@ -52,6 +52,7 @@ install_scripts=( ["Dependencies"]="install_pfpsim_deps_autofind_compiler.sh" \
     ["PFPGEN"]="install_pfpgen.sh" \
     ["PFPDB"]="install_pfpdb.sh")
 
+mkdir -p log
 ## Print associative array
 #for i in "${!install_scripts[@]}"
 #do
