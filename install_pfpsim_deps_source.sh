@@ -71,8 +71,8 @@ cd ../..
 sudo rm -rf tmp-proto
 
 # nanomsg
-NANOMSG_URL=http://download.nanomsg.org/nanomsg-0.5-beta.tar.gz
-
+#NANOMSG_URL=http://download.nanomsg.org/nanomsg-0.5-beta.tar.gz
+NANOMSG_URL=https://github.com/nanomsg/nanomsg/archive/0.5-beta.tar.gz
 mkdir tmp-nano
 cd tmp-nano
 
@@ -81,6 +81,8 @@ wget -O nanomsg.tar.gz $NANOMSG_URL
 tar -xzvf nanomsg.tar.gz
 
 cd nanomsg*
+
+./autogen.sh
 
 if [ "$COMPILER" == "clang" ]; then
   ./configure CC=clang CXX=clang++ CXXFLAGS='-std=c++11 -stdlib=libstdc++' LDFLAGS='-stdlib=libstdc++'
