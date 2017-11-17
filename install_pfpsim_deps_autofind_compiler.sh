@@ -3,4 +3,4 @@
 
 WHATCXXCOMPILER=$(./findCXXCompiler.sh)
 
-./install_pfpsim_deps_source.sh --$(WHATCXXCOMPILER)
+./install_pfpsim_deps_source.sh --$WHATCXXCOMPILER
