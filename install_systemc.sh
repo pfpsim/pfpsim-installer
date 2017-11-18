@@ -77,14 +77,17 @@ cd systemc*
 mkdir build
 cd build
 if [ "$COMPILER" == "clang" ]; then
-  ../configure --prefix=$SYSTEMC_HOME CC=clang CXX=clang++ CPP='clang++ -E' CFLAGS=-stdlib=libstdc++ CXXFLAGS=-stdlib=libstdc++
+  ../configure --prefix=$SYSTEMC_HOME CC=clang CXX=clang++ CPP='clang++ -E' CFLAGS=-stdlib=libstdc++ CXXFLAGS=-stdlib=libstdc++ -std=c++11
 elif [ "$COMPILER" == "gcc" ]; then
-  ../configure --prefix=$SYSTEMC_HOME CC=gcc CXX=g++ CPP='g++ -E'
+  ../configure --prefix=$SYSTEMC_HOME CC=gcc CXX=g++ CPP='g++ -E' CXXFLAGS=-std=c++11
+  #cmake ../ -DCMAKE_CXX_STANDARD=11
+  #cmake --build
 else
   echo "**ERROR: Invalid compiler! Please use clang or gcc"
   exit
 fi
 make
+echo "Making"
 sudo make install
 
 cd ../../..
