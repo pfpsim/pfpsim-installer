@@ -49,4 +49,6 @@ sudo apt-get install -y \
   bisonc++ \
   doxygen \
 
+sudo apt-get install -y python python-pip
+
 echo "Done installing pfpsim Apt-Get dependencies."
